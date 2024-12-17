@@ -28,7 +28,8 @@ run the following command :
 ```
 pip install kafka
 ```
-open docker desktop app and sign in and keep it running 
+open docker desktop app and sign in and keep it running with this screen as shown below
+
 ![image](https://github.com/user-attachments/assets/172fe25b-bee8-4a63-a7f4-5569bf82629e)
 
 Rename the current terminal as "Kafka" by right clicking the title of the terminal
@@ -154,9 +155,7 @@ run the following command :
 ```
 pip install -r requirements.txt
 ```
-open docker desktop as an app and sign in and keep it running 
-![image](https://github.com/user-attachments/assets/4f5084ff-cfe2-4996-95fd-2061eeff1e70)
-
+open docker desktop as an app and sign in and keep it running as shown above.
 Rename the current terminal as "Kafka" by right clicking the title of the terminal
 Open three more terminals and rename them as "trainer", "orchestrator", and "predictor" for convenience 
 
