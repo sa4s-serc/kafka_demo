@@ -26,25 +26,25 @@ cd kafka_demo\Choreography
 ### Installing Requirements
 run the following command :
 ```
-cd kafka_demo/Choreography
 pip install kafka
 ```
-open docker desktop as an app and sign in and keep it running 
-(insert image)
+open docker desktop app and sign in and keep it running 
+![image](https://github.com/user-attachments/assets/172fe25b-bee8-4a63-a7f4-5569bf82629e)
+
 Rename the current terminal as "Kafka" by right clicking the title of the terminal
-(insert image)
-Open two more terminals and rename it for convenience as "Producer" and "Consumer"
+Open two more terminals and rename them as "Producer" and "Consumer" for convenience
 
 ### Kafka Terminal
-start Kafka through docker by running:
+start the Kafka service through docker by running:
 ```
 docker compose up --build
 ```
 ### Producer
-Activate the same virtual environment using
+Navigate to the Choreography directory and activate the same virtual environment using
 ```
+cd kafka_demo\Choreography
 .\env\Scripts\activate
-cd kafka_demo\Choreography\producer
+cd producer
 ```
 Then install the requirements text using
 ```
@@ -52,10 +52,11 @@ pip install -r requirements.txt
 ```
 
 ### Consumer
-Activate the same virtual environment using
+Navigate to the Choreography directory and activate the same virtual environment using
 ```
+cd kafka_demo\Choreography
 .\env\Scripts\activate
-cd kafka_demo\Choreography\consumer
+cd consumer
 ```
 Then install the requirements text using
 ```
@@ -77,7 +78,7 @@ python consumer.py
 ## Linux
 ### Navigate to the Choreography directory using
 ```
-cd kafka_demo\Choreography
+cd kafka_demo/Choreography
 ```
 ###  Create a virtual environment 
 ```
@@ -87,7 +88,6 @@ source ./env/bin/activate
 ### Installing Requirements
 run the following command :
 ```
-cd kafka_demo/Choreography
 pip install kafka
 ```
 Start docker on your system by following the instructions from this link:
@@ -101,10 +101,11 @@ start Kafka through docker by running:
 docker compose up --build
 ```
 #### Second terminal  - the Producer terminal 
-Activate the same virtual environment created earlier using
+Activate the same virtual environment created earlier, and then navigate to the producer directory
 ```
+cd kafka_demo/Choreography
 source ./env/bin/activate
-cd kafka_demo/Choreography/producer
+cd producer
 ```
 Then install the requirements text using
 ```
@@ -112,10 +113,11 @@ pip install -r requirements.txt
 ```
 
 #### Third terminal - the Consumer terminal
-Activate the same virtual environment using
+Activate the same virtual environment created earlier, and then navigate to the consumer directory
 ```
+cd kafka_demo/Choreography
 source ./env/bin/activate
-cd kafka_demo/Choreography/consumer
+cd consumer
 ```
 Then install the requirements text using
 ```
@@ -153,10 +155,10 @@ run the following command :
 pip install -r requirements.txt
 ```
 open docker desktop as an app and sign in and keep it running 
-(insert image)
+![image](https://github.com/user-attachments/assets/4f5084ff-cfe2-4996-95fd-2061eeff1e70)
+
 Rename the current terminal as "Kafka" by right clicking the title of the terminal
-(insert image)
-Open three more terminals and rename it for convenience as "trainer", "orchestrator", and "predictor"
+Open three more terminals and rename them as "trainer", "orchestrator", and "predictor" for convenience 
 
 ### Kafka Terminal
 install kafka 
@@ -208,13 +210,13 @@ python predictor.py
 ## Linux
 ###  Create a virtual environment 
 ```
+cd kafka_demo/Orchestration
 python3 -m venv orc
 source ./orc/bin/activate
 ```
 ### Installing Requirements
 run the following command :
 ```
-cd kafka_demo/Orchestration
 pip install kafka-python==2.0.2
 ```
 Start docker on your system by following the instructions from this link:
@@ -230,22 +232,22 @@ docker compose up --build
 #### Second terminal  - the Trainer terminal 
 Activate the same virtual environment created earlier using
 ```
-source ./orc/bin/activate
 cd kafka_demo/Orchestrator
+source ./orc/bin/activate
 ```
 
 #### Third terminal - the Consumer terminal
 Activate the same virtual environment using
 ```
-source ./orc/bin/activate
 cd kafka_demo/Orchestrator
+source ./orc/bin/activate
 ```
 
 #### Fourth terminal - the Consumer terminal
 Activate the same virtual environment using
 ```
-source ./orc/bin/activate
 cd kafka_demo/Orchestrator
+source ./orc/bin/activate
 ```
 
 ### Running the simulation
@@ -260,7 +262,7 @@ python3 orchestrator.py
 ```
 #### Predictor
 ```
-python3 orchestrator.py
+python3 predictor.py
 ```
 
 
