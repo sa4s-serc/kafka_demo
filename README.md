@@ -1,8 +1,5 @@
 
 # Build a simple ML model and set up live data streaming and predictions using Kafka
-Github Repository
-https://github.com/sa4s-serc/kafka_demo/
-
 A demo for implementing and deploying a simple ML model using Kafka and Docker Images
 1. Download Docker desktop for your system using the following link
 https://www.docker.com/products/docker-desktop/
