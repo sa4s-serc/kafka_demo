@@ -4,8 +4,10 @@ A demo for implementing and deploying a simple ML model using Kafka and Docker I
 1. Download Docker desktop for your system using the following link
 https://www.docker.com/products/docker-desktop/
 
-2. Clone the repository "kafka_demo" to your system from the following link
-   https://github.com/sa4s-serc/kafka_demo/
+2. Clone the repository "kafka_demo" to your system using
+   ```
+   git clone https://github.com/sa4s-serc/kafka_demo/
+   ```
 3. Open VS code via the terminal (This is purely to see the code)
    
 
